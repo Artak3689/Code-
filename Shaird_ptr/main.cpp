@@ -3,8 +3,8 @@
 int main()
 {
         Shared_ptr<int> a(new int);
-	a[0]=18;
+	*a = 18;
         Shared_ptr<int> b;
-        b=a;
-	std::cout<< a[0] <<std::endl;
+        b = a;
+	std::cout<< *a <<std::endl;
 }
