@@ -27,6 +27,7 @@ public:
         Shared_ptr(Shared_ptr &&);
         ~Shared_ptr();
         T& operator[](int);
+        T& operator*();
         Shared_ptr<T> operator=(const Shared_ptr<T>&);
 };
 #include"shared_ptr.hpp"
