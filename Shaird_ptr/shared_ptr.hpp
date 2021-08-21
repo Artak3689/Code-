@@ -52,3 +52,4 @@ Shared_ptr<T>::~Shared_ptr()
 }
 template<typename T>
 T& Shared_ptr<T>::operator[](int index){return m_ptr[index];}
+T& Shared_ptr<T>::operator*(){return *m_ptr;}
